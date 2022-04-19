@@ -1,0 +1,19 @@
+{
+    "name": "usoft/rabbit-mq",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Usoft\\RabbitMq\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ulasoft",
+            "email": "ulasoft@mail.ru"
+        }
+    ],
+    "require": {
+        "php-amqplib/php-amqplib": ">=3.0"
+    }
+}
