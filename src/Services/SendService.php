@@ -18,7 +18,7 @@ class SendService
 
     public function queue_declare($queue, $data)
     {
-        $this->channel->queue_declare($queue, false, false, false, false);
+        $this->channel->queue_declare($queue, false, true, false, false);
 
         $msg = new AMQPMessage(json_encode($data));
         $this->channel->basic_publish($msg, '', $queue);
