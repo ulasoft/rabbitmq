@@ -25,5 +25,7 @@ class SendService
 
         $this->channel->close();
         $this->connection->close();
+
+        return $this;
     }
 }
